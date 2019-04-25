@@ -32,7 +32,7 @@ public class ActivityData {
     }
 
     // Generate data
-    public static ActivityData[] generateDataINF(ActivityData.Group group) {
+    public static ActivityData[] generateData(ActivityData.Group group) {
         ActivityData[] data = new ActivityData[4];
 
         switch (group) {
