@@ -16,7 +16,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="59dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:entries="@array/spinnerlist"
+        android:prompt="@string/opleidingen"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="395dp"
