@@ -36,23 +36,29 @@ public class ActivityData {
         ActivityData[] data = new ActivityData[4];
 
         switch (group) {
+            case "Communicatie":
+                data[0] = new ActivityData("Presentatie", "08:30");
+                data[1] = new ActivityData("Workshop", "09:00");
+                data[2] = new ActivityData("Presentatie", "19:00");
+                data[3] = new ActivityData("Workshop", "19:30");
+                break;
             case "Informatica":
-                data[0] = new ActivityData("Presentatie", "09:00");
-                data[1] = new ActivityData("Workshop", "9:30");
+                data[0] = new ActivityData("Presentatie", "10:00");
+                data[1] = new ActivityData("Workshop", "10:30");
                 data[2] = new ActivityData("Presentatie", "12:00");
                 data[3] = new ActivityData("Workshop", "12:30");
                 break;
 
             case "Technische Informatica":
-                data[0] = new ActivityData("Presentatie", "15:00");
-                data[1] = new ActivityData("Workshop", "15:30");
+                data[0] = new ActivityData("Presentatie", "16:00");
+                data[1] = new ActivityData("Workshop", "16:30");
                 data[2] = new ActivityData("Presentatie", "17:00");
                 data[3] = new ActivityData("Workshop", "17:30");
                 break;
 
             default:
-                data[0] = new ActivityData("Presentatie", "15:00");
-                data[1] = new ActivityData("Workshop", "15:30");
+                data[0] = new ActivityData("Presentatie", "16:00");
+                data[1] = new ActivityData("Workshop", "16:30");
                 data[2] = new ActivityData("Presentatie", "17:00");
                 data[3] = new ActivityData("Workshop", "17:30");
                 break;
