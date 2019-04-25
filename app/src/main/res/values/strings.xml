@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">OpenDag</string>
+    <string-array name="spinnerlist">
+        <item>Communicatie</item>
+        <item>CMD</item>
+        <item>Informatica</item>
+        <item>CMGT</item>
+        <item>Technische Informatica</item>
+    </string-array>
 </resources>
