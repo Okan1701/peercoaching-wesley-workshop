@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 
 public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MyViewHolder> {
-    private ActivityData[] dataSet;
+    private ActivityData[] mDataset;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -28,7 +28,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MyView
 
     // Provide a suitable constructor (depends on the kind of dataset)
     public MainListAdapter(ActivityData[] myDataset) {
-        dataSet = myDataset;
+        mDataset = myDataset;
     }
 
     // Create new views (invoked by the layout manager)
@@ -51,14 +51,14 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MyView
     public void onBindViewHolder(MyViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.txtName.setText(dataSet[position].getName());
-        holder.txtDate.setText(dataSet[position].getDate());
+        holder.txtName.setText(mDataset[position].getName());
+        holder.txtDate.setText(mDataset[position].getDate());
 
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return dataSet.length;
+        return mDataset.length;
     }
 }
